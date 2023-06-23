@@ -40,6 +40,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const total = document.getElementById("total");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -67,6 +68,7 @@ function showQuestion() {
         }
         button.addEventListener("click", selectAnswer);
     });
+    total.innerHTML=`Question ${questionNo}/4 `;
 }
 
 function resetState() {
@@ -95,13 +97,29 @@ function selectAnswer(e) {
 
     });
 
+    
     nextButton.style.display = "block";
 
 }
 function showScore(){
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.
+    total.innerHTML='';
+    if(score===4){
+    questionElement.innerHTML = `Congratulations!! You scored ${score} out of ${questions.
     length}!`; 
+    }
+    else if(score===3){
+        questionElement.innerHTML = `Good,You scored ${score} out of ${questions.
+            length}!`; 
+    }
+    else if(score===2){
+        questionElement.innerHTML = `You scored ${score} out of ${questions.
+            length}! `; 
+    }
+    else{
+        questionElement.innerHTML = `Better luck next time,You scored ${score} out of ${questions.
+            length}!`; 
+    }
     nextButton.innerHTML = "Play Again";
     nextButton.style.display="block"; 
 }
