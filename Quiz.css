@@ -77,3 +77,8 @@ body{
 .incorrect{
     background: #ff9393;
 }
+
+#total{
+    margin-bottom: 10px;
+    color: #001e4d;
+}
