@@ -13,8 +13,8 @@ const questions = [
         answers: [
             { text: 73, correct: false },
             { text: 74, correct: false },
-            { text: 75, correct: true },
-            { text: 76, correct: false },
+            { text: 75, correct: false },
+            { text: 76, correct: true },
         ]
     },
     {
