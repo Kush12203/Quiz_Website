@@ -4,17 +4,17 @@ const questions = [
         answers: [
             { text: 21, correct: false },
             { text: 22, correct: false },
-            { text: 23, correct: true },
-            { text: 24, correct: false },
+            { text: 23, correct: false },
+            { text: 24, correct: true },
         ]
     },
     {
         question: "How many centuries does Virat Kohli have now?",
         answers: [
-            { text: 73, correct: false },
-            { text: 74, correct: false },
-            { text: 75, correct: false },
-            { text: 76, correct: true },
+            { text: 81, correct: true },
+            { text: 82, correct: false },
+            { text: 83, correct: false },
+            { text: 84, correct: false },
         ]
     },
     {
